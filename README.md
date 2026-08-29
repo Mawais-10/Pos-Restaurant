@@ -7,7 +7,7 @@
 
 ---
 
-## Sprint 1 — Fri 29 Aug → Sat 30 Aug: Project Foundation
+## Sprint 1 — Sat 29 Aug → Sun 30 Aug: Project Foundation
 
 The base everything else sits on. Do not skip anything here.
 
@@ -22,7 +22,7 @@ The base everything else sits on. Do not skip anything here.
 
 ---
 
-## Sprint 2 — Sun 31 Aug → Mon 1 Sep: Menu Management + Tap Ordering (POS Screen)
+## Sprint 2 — Mon 31 Aug → Tue 1 Sep: Menu Management + Tap Ordering (POS Screen)
 
 The POS screen is the heart — build it early so every later module plugs into it.
 
@@ -39,7 +39,7 @@ The POS screen is the heart — build it early so every later module plugs into 
 
 ---
 
-## Sprint 3 — Tue 2 Sep → Wed 3 Sep: Dine-In + Table Management
+## Sprint 3 — Wed 2 Sep → Thu 3 Sep: Dine-In + Table Management
 
 - [ ] Table layout screen: add/edit tables, visual grid/floor layout.
 - [ ] Table status: **Free / Occupied / Reserved** with color coding; status auto-updates from orders.
@@ -52,7 +52,7 @@ The POS screen is the heart — build it early so every later module plugs into 
 
 ---
 
-## Sprint 4 — Thu 4 Sep → Fri 5 Sep: Billing + KOT Printing + E-Invoice (VAT)
+## Sprint 4 — Fri 4 Sep → Sat 5 Sep: Billing + KOT Printing + E-Invoice (VAT)
 
 - [ ] Bill generation from an order: subtotal, discount, VAT, grand total.
 - [ ] **Split bill** (by items or equal split) and **merge bill** (multiple tables/orders → one bill).
@@ -68,7 +68,7 @@ The POS screen is the heart — build it early so every later module plugs into 
 
 ---
 
-## Sprint 5 — Sat 6 Sep → Sun 7 Sep: Takeaway (all types) + KDS
+## Sprint 5 — Sun 6 Sep → Mon 7 Sep: Takeaway (all types) + KDS
 
 - [ ] Takeaway flows on the POS screen:
   - **Walk-in** — counter order → bill → collect.
@@ -85,7 +85,7 @@ The POS screen is the heart — build it early so every later module plugs into 
 
 ---
 
-## Sprint 6 — Mon 8 Sep → Tue 9 Sep: Inventory (full) + Expenses
+## Sprint 6 — Tue 8 Sep → Wed 9 Sep: Inventory (full) + Expenses
 
 - [ ] Basic inventory: item list with units, **stock in / stock out**, current stock view, **low-stock alerts** (threshold per item, dashboard badge).
 - [ ] **Recipe-based deduction:** define recipe per menu item (e.g., 1 burger = 1 bun + 1 patty + 1 cheese + sauces); on sale, ingredients auto-deduct.
@@ -98,7 +98,7 @@ The POS screen is the heart — build it early so every later module plugs into 
 
 ---
 
-## Sprint 7 — Wed 10 Sep → Thu 11 Sep: HR & Payroll + Customer Loyalty
+## Sprint 7 — Thu 10 Sep → Fri 11 Sep: HR & Payroll + Customer Loyalty
 
 - [ ] Staff profiles (linked to login users where applicable).
 - [ ] **Attendance:** daily check-in/out, monthly attendance sheet.
@@ -115,20 +115,21 @@ The POS screen is the heart — build it early so every later module plugs into 
 
 ---
 
-## Sprint 8 — Fri 12 Sep → Sun 13 Sep: QR Menu, Reports, Backup
+## Sprint 8 — Sat 12 Sep → Sun 13 Sep: QR Menu, Reports, Backup, Licensing, Packaging, Testing
+
 - [ ] **Scanner/QR menu (Android):** Express serves a mobile-friendly read-only menu page on LAN; generate & print QR code per table.
 - [ ] **Reports/Dashboard:** daily/weekly/monthly sales, top items, order-type breakdown, expenses vs sales, VAT report, inventory valuation.
 - [ ] **Backup & Restore:** manual backup (choose location/USB), restore from file, optional automatic scheduled backup — SQLite file copy + verify.
 - [ ] **Offline licensing (infrastructure only):** license key + device/hardware fingerprint, local validation, feature-flag framework in place (all flags ON for now — tier gating is a later task).
-- [ ] **Packaging:** electron-builder → Windows `.exe` (macOS `.dmg` config kept ready).
-- [ ] Full end-to-end testing of every flow + bug fixing. Priority order if time runs short: POS/billing/KOT bugs first, then inventory, then HR/reports polish.
 
 **Done when:** A packaged installer runs the whole system offline on a clean Windows and mac machine.
 
 ---
 
-## Testing — Monday → Sep 14 (Meeting)
+## Testing — Monday → Sep 14 — 15 (Meeting)
 
+- [ ] **Packaging:** electron-builder → Windows `.exe` (macOS `.dmg` config kept ready).
+- [ ] Full end-to-end testing of every flow + bug fixing
 
 
 
