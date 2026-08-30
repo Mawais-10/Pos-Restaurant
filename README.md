@@ -11,12 +11,12 @@
 
 The base everything else sits on. Do not skip anything here.
 
-- [ ] Scaffold Electron + React (Vite) + Express running together (Electron spawns the local Express server).
-- [ ] Set up Prisma + SQLite; write the **full database schema** up front:
+- [x] Scaffold Electron + React (Vite) + Express running together (Electron spawns the local Express server).
+- [x] Set up Prisma + SQLite; write the **full database schema** up front:
   - `users` (roles), `categories`, `menu_items` (price, VAT category), `tables`, `orders`, `order_items`, `bills`, `payments`, `customers`, `loyalty_transactions`, `inventory_items`, `stock_movements`, `recipes`, `suppliers`, `purchase_orders`, `batches`, `wastage`, `expenses`, `staff`, `attendance`, `shifts`, `leaves`, `payroll`, `kot_tickets`, `settings`.
-- [ ] App shell: sidebar navigation, routing, base layout, theme.
-- [ ] Staff login + role-based access (Admin, Cashier, Waiter, Kitchen) — simple session, all offline.
-- [ ] Settings screen skeleton (restaurant name, currency, VAT mode).
+- [x] App shell: sidebar navigation, routing, base layout, theme.
+- [x] Staff login + role-based access (Admin, Cashier, Waiter, Kitchen) — simple session, all offline.
+- [x] Settings screen skeleton (restaurant name, currency, VAT mode).
 
 **Done when:** App opens as a desktop window, login works, empty pages exist for every module, DB migrates cleanly.
 
