@@ -26,14 +26,14 @@ The base everything else sits on. Do not skip anything here.
 
 The POS screen is the heart — build it early so every later module plugs into it.
 
-- [ ] Menu CRUD: categories (Starters, Main Course, Beverages, Desserts…), items with price, image, VAT category, active/inactive.
-- [ ] Tap-ordering POS screen:
+- [x] Menu CRUD: categories (Starters, Main Course, Beverages, Desserts…), items with price, image, VAT category, active/inactive.
+- [x] Tap-ordering POS screen:
   - Category tabs → tap item → added to cart.
   - Quantity + / − buttons, remove item.
   - Special instructions per item.
   - Order summary panel with running total.
-- [ ] Order engine (backend): create order, add/edit/remove items, order statuses (`draft → confirmed → completed → cancelled`), unique **order/token number** generator.
-- [ ] Order type selector: Dine-In / Takeaway (types wired fully in Sprints 3 & 5).
+- [x] Order engine (backend): create order, add/edit/remove items, order statuses (`draft → confirmed → completed → cancelled`), unique **order/token number** generator.
+- [x] Order type selector: Dine-In / Takeaway (types wired fully in Sprints 3 & 5).
 
 **Done when:** You can build an order by tapping items and confirm it; it saves to DB with a token number.
 
@@ -41,10 +41,10 @@ The POS screen is the heart — build it early so every later module plugs into 
 
 ## Sprint 3 — Wed 2 Sep → Thu 3 Sep: Dine-In + Table Management
 
-- [ ] Table layout screen: add/edit tables, visual grid/floor layout.
-- [ ] Table status: **Free / Occupied / Reserved** with color coding; status auto-updates from orders.
-- [ ] Tap a table → opens POS screen for that table; one running order per table.
-- [ ] Edit order before billing (add/remove/change qty — these changes feed KOT reprint in Sprint 4).
+- [x] Table layout screen: add/edit tables, visual grid/floor layout.
+- [x] Table status: **Free / Occupied / Reserved** with color coding; status auto-updates from orders.
+- [x] Tap a table → opens POS screen for that table; one running order per table.
+- [x] Edit order before billing (add/remove/change qty — these changes feed KOT reprint in Sprint 4).
 - [ ] Table reservations: reserve with customer name/phone/time, mark arrived/cancelled.
 - [ ] Transfer order to another table; groundwork for merge (two tables → one bill).
 
