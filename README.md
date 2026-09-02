@@ -45,8 +45,8 @@ The POS screen is the heart — build it early so every later module plugs into 
 - [x] Table status: **Free / Occupied / Reserved** with color coding; status auto-updates from orders.
 - [x] Tap a table → opens POS screen for that table; one running order per table.
 - [x] Edit order before billing (add/remove/change qty — these changes feed KOT reprint in Sprint 4).
-- [ ] Table reservations: reserve with customer name/phone/time, mark arrived/cancelled.
-- [ ] Transfer order to another table; groundwork for merge (two tables → one bill).
+- [x] Table reservations: reserve with customer name/phone/time, mark arrived/cancelled.
+- [x] Transfer order to another table; groundwork for merge (two tables → one bill).
 
 **Done when:** Full dine-in flow works: pick table → order → edit → table shows Occupied → close order frees table.
 
@@ -54,9 +54,9 @@ The POS screen is the heart — build it early so every later module plugs into 
 
 ## Sprint 4 — Fri 4 Sep → Sat 5 Sep: Billing + KOT Printing + E-Invoice (VAT)
 
-- [ ] Bill generation from an order: subtotal, discount, VAT, grand total.
-- [ ] **Split bill** (by items or equal split) and **merge bill** (multiple tables/orders → one bill).
-- [ ] Payment recording: cash / card, change calculation, mark paid → order completed → table freed.
+- [x] Bill generation from an order: subtotal, discount, VAT, grand total.
+- [x] **Split bill** (by items or equal split) and **merge bill** (multiple tables/orders → one bill).
+- [x] Payment recording: cash / card, change calculation, mark paid → order completed → table freed.
 - [ ] **KOT engine:**
   - Auto-generate KOT on order confirm: table no., items, qty, special instructions, token no. — **no prices**.
   - On order change after confirm → auto-print updated KOT (only the changes flagged NEW/CANCELLED).
