@@ -57,12 +57,12 @@ The POS screen is the heart — build it early so every later module plugs into 
 - [x] Bill generation from an order: subtotal, discount, VAT, grand total.
 - [x] **Split bill** (by items or equal split) and **merge bill** (multiple tables/orders → one bill).
 - [x] Payment recording: cash / card, change calculation, mark paid → order completed → table freed.
-- [ ] **KOT engine:**
+- [x] **KOT engine:**
   - Auto-generate KOT on order confirm: table no., items, qty, special instructions, token no. — **no prices**.
   - On order change after confirm → auto-print updated KOT (only the changes flagged NEW/CANCELLED).
   - Printing via `node-thermal-printer` (kitchen printer) with a fallback "print to PDF/preview" mode for dev without hardware.
-- [ ] Customer receipt printing.
-- [ ] **E-Invoice:** invoice number sequence, date/time, customer details, item-level VAT (inclusive & exclusive modes), stored invoice records screen.
+- [x] Customer receipt printing.
+- [x] **E-Invoice:** invoice number sequence, date/time, customer details, item-level VAT (inclusive & exclusive modes), stored invoice records screen.
 
 **Done when:** Confirm order → KOT prints; bill with correct VAT prints; split/merge work; invoices are stored and viewable.
 
@@ -70,12 +70,12 @@ The POS screen is the heart — build it early so every later module plugs into 
 
 ## Sprint 5 — Sun 6 Sep → Mon 7 Sep: Takeaway (all types) + KDS
 
-- [ ] Takeaway flows on the POS screen:
+- [x] Takeaway flows on the POS screen:
   - **Walk-in** — counter order → bill → collect.
   - **Phone/Interchange** — capture customer name + phone → prepare for pickup.
   - **House delivery** — customer address, assign own rider, delivery status (Preparing → Out for delivery → Delivered).
-- [ ] Rider management: add riders, assign to order.
-- [ ] **KDS (Kitchen Display System):**
+- [x] Rider management: add riders, assign to order.
+- [x] **KDS (Kitchen Display System):**
   - Serve a KDS web page from the local Express server so any tablet/screen on the restaurant's LAN can open it (fully offline).
   - Shows: token no., table no., order type, items + qty, special instructions, order time, elapsed time.
   - Kitchen taps status: **New → Preparing → Ready → Completed**; status syncs live to POS (WebSocket/socket.io over LAN).
