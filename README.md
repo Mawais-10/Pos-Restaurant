@@ -87,12 +87,12 @@ The POS screen is the heart — build it early so every later module plugs into 
 
 ## Sprint 6 — Tue 8 Sep → Wed 9 Sep: Inventory (full) + Expenses
 
-- [ ] Basic inventory: item list with units, **stock in / stock out**, current stock view, **low-stock alerts** (threshold per item, dashboard badge).
-- [ ] **Recipe-based deduction:** define recipe per menu item (e.g., 1 burger = 1 bun + 1 patty + 1 cheese + sauces); on sale, ingredients auto-deduct.
-- [ ] Suppliers: CRUD + purchase history.
-- [ ] Purchase orders: create PO → receive PO → stock-in automatically.
-- [ ] Advanced: **batch tracking**, **expiry dates** (expiring-soon alerts), **wastage tracking** with reasons, wastage reports/analytics, **automatic reorder suggestions** (below-threshold list).
-- [ ] **Expenses module:** categories (Electricity, Bills, Staff salary, Rent, Others), add expense with date/amount/note, monthly expense report.
+- [x] Basic inventory: item list with units, **stock in / stock out**, current stock view, **low-stock alerts** (threshold per item, dashboard badge).
+- [x] **Recipe-based deduction:** define recipe per menu item (e.g., 1 burger = 1 bun + 1 patty + 1 cheese + sauces); on sale, ingredients auto-deduct.
+- [x] Suppliers: CRUD + purchase history.
+- [x] Purchase orders: create PO → receive PO → stock-in automatically.
+- [x] Advanced: **batch tracking**, **expiry dates** (expiring-soon alerts), **wastage tracking** with reasons, wastage reports/analytics, **automatic reorder suggestions** (below-threshold list).
+- [x] **Expenses module:** categories (Electricity, Bills, Staff salary, Rent, Others), add expense with date/amount/note, monthly expense report.
 
 **Done when:** Selling a burger deducts its ingredients; PO receive increases stock; expiry/wastage/reorder screens work; expenses are recorded and reportable.
 
@@ -100,12 +100,12 @@ The POS screen is the heart — build it early so every later module plugs into 
 
 ## Sprint 7 — Thu 10 Sep → Fri 11 Sep: HR & Payroll + Customer Loyalty
 
-- [ ] Staff profiles (linked to login users where applicable).
-- [ ] **Attendance:** daily check-in/out, monthly attendance sheet.
-- [ ] **Shifts:** define shifts, assign staff.
-- [ ] **Leave management:** leave types, apply/approve, leave balance.
-- [ ] **Payroll:** basic salary calc (from attendance), **deductions**, **bonuses**, generate + print **salary slips**.
-- [ ] **Loyalty & Points:**
+- [x] Staff profiles (linked to login users where applicable).
+- [x] **Attendance:** daily check-in/out, monthly attendance sheet.
+- [x] **Shifts:** define shifts, assign staff.
+- [x] **Leave management:** leave types, apply/approve, leave balance.
+- [x] **Payroll:** basic salary calc (from attendance), **deductions**, **bonuses**, generate + print **salary slips**.
+- [x] **Loyalty & Points:**
   - Customer profile: name, phone, email (optional), purchase history.
   - Configurable earning rule (e.g., $1 = 1 point), points auto-added when bill completes.
   - Redeem points as discount at billing (max-points-per-bill limit, points required per discount, optional expiry).
@@ -117,10 +117,10 @@ The POS screen is the heart — build it early so every later module plugs into 
 
 ## Sprint 8 — Sat 12 Sep → Sun 13 Sep: QR Menu, Reports, Backup, Licensing, Packaging, Testing
 
-- [ ] **Scanner/QR menu (Android):** Express serves a mobile-friendly read-only menu page on LAN; generate & print QR code per table.
-- [ ] **Reports/Dashboard:** daily/weekly/monthly sales, top items, order-type breakdown, expenses vs sales, VAT report, inventory valuation.
-- [ ] **Backup & Restore:** manual backup (choose location/USB), restore from file, optional automatic scheduled backup — SQLite file copy + verify.
-- [ ] **Offline licensing (infrastructure only):** license key + device/hardware fingerprint, local validation, feature-flag framework in place (all flags ON for now — tier gating is a later task).
+- [x] **Scanner/QR menu (Android):** Express serves a mobile-friendly read-only menu page on LAN; generate & print QR code per table.
+- [x] **Reports/Dashboard:** daily/weekly/monthly sales, top items, order-type breakdown, expenses vs sales, VAT report, inventory valuation.
+- [x] **Backup & Restore:** manual backup (choose location/USB), restore from file, optional automatic scheduled backup — SQLite file copy + verify.
+- [x] **Offline licensing (infrastructure only):** license key + device/hardware fingerprint, local validation, feature-flag framework in place (all flags ON for now — tier gating is a later task).
 
 **Done when:** A packaged installer runs the whole system offline on a clean Windows and mac machine.
 
@@ -128,8 +128,8 @@ The POS screen is the heart — build it early so every later module plugs into 
 
 ## Testing — Monday → Sep 14 — 15 (Meeting)
 
-- [ ] **Packaging:** electron-builder → Windows `.exe` (macOS `.dmg` config kept ready).
-- [ ] Full end-to-end testing of every flow + bug fixing
+- [x] **Packaging:** electron-builder → Windows `.exe` (macOS `.dmg` config kept ready).
+- [x] Full end-to-end testing of every flow + bug fixing
 
 
 
